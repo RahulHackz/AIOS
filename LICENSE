@@ -1,0 +1,36 @@
+PROPRIETARY LICENSE
+
+Copyright (c) 2026 AI OS. All Rights Reserved.
+
+This software and associated documentation files (the "Software") are the 
+proprietary property of AI OS and are protected by copyright law and 
+international treaties.
+
+PERMITTED USES:
+- You may view and run this Software for evaluation and demonstration purposes.
+- You may use this Software to interact with AI OS services.
+- Hackathon judges and participants may review this code for evaluation purposes.
+
+RESTRICTIONS:
+- You may NOT copy, modify, merge, publish, distribute, sublicense, or sell
+  copies of the Software without explicit written permission.
+- You may NOT use the Software or any portion of it in your own projects
+  without explicit written permission.
+- You may NOT reverse engineer, decompile, or attempt to extract the source
+  code of any backend services connected to this Software.
+- You may NOT remove or alter any proprietary notices, labels, or marks.
+
+BACKEND SERVICES:
+The backend infrastructure, APIs, and server-side logic are proprietary and
+not included in this repository. Access to these services is provided solely
+for demonstration purposes.
+
+DISCLAIMER:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THE SOFTWARE.
+
+For licensing inquiries, please contact: [admin@rahulhackz.in]
+
+---
+AI OS - Powering the Future of AI Workflows with ease!

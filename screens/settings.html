@@ -1,0 +1,114 @@
+<!-- Settings Screen -->
+<div class="os-settings-screen" id="settingsScreen" style="display: none;">
+    <!-- Sidebar -->
+    <div class="settings-sidebar">
+        <div class="settings-sidebar-header">
+            <button class="app-back-btn" onclick="app.closeSettings()">
+                <ion-icon name="chevron-back"></ion-icon>
+                <span>Back</span>
+            </button>
+            <h1>Settings</h1>
+        </div>
+        <div class="settings-search">
+            <ion-icon name="search"></ion-icon>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="settings-list">
+            <!-- Profile Card (Dynamic) -->
+            <div class="settings-profile-card" id="settingsProfileCard" onclick="app.handleProfileClick()">
+                <div class="avatar">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+                <div class="info">
+                    <h3 id="settingsUserName">Sign in to AI OS</h3>
+                    <p id="settingsUserDesc">Sync your apps and data</p>
+                </div>
+                <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+            </div>
+
+            <!-- Settings Groups -->
+            <div class="settings-group">
+                <div class="settings-item" onclick="app.selectSetting('general')">
+                    <div class="icon-wrap" style="background: #8E8E93;">
+                        <ion-icon name="settings-sharp"></ion-icon>
+                    </div>
+                    <span class="label">General</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+                <div class="settings-item" onclick="app.selectSetting('wallpaper')">
+                    <div class="icon-wrap" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <ion-icon name="image"></ion-icon>
+                    </div>
+                    <span class="label">Wallpaper</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+                <div class="settings-item" onclick="app.selectSetting('ai_config')">
+                    <div class="icon-wrap" style="background: #5856D6;">
+                        <ion-icon name="hardware-chip"></ion-icon>
+                    </div>
+                    <span class="label">AI Configuration</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <div class="settings-item" onclick="app.selectSetting('subscription')">
+                    <div class="icon-wrap" style="background: #34C759;">
+                        <ion-icon name="card"></ion-icon>
+                    </div>
+                    <span class="label">Subscription</span>
+                    <span class="value">Active</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+                <div class="settings-item" onclick="app.selectSetting('credits')">
+                    <div class="icon-wrap" style="background: #FF9500;">
+                        <ion-icon name="flash"></ion-icon>
+                    </div>
+                    <span class="label">Credits</span>
+                    <span class="value" id="creditsValue">--</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <div class="settings-item" onclick="app.selectSetting('help')">
+                    <div class="icon-wrap" style="background: #007AFF;">
+                        <ion-icon name="help-circle"></ion-icon>
+                    </div>
+                    <span class="label">Help & Support</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+                <div class="settings-item" onclick="app.selectSetting('about')">
+                    <div class="icon-wrap" style="background: #8E8E93;">
+                        <ion-icon name="information-circle"></ion-icon>
+                    </div>
+                    <span class="label">About</span>
+                    <ion-icon name="chevron-forward" class="arrow"></ion-icon>
+                </div>
+            </div>
+
+            <div class="settings-group" id="settingsLogoutGroup" style="display: none;">
+                <div class="settings-item danger" onclick="app.logout()">
+                    <div class="icon-wrap" style="background: #FF3B30;">
+                        <ion-icon name="log-out"></ion-icon>
+                    </div>
+                    <span class="label">Log Out</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div class="settings-detail" id="settingsDetail">
+        <div class="settings-detail-header">
+            <button class="app-back-btn" onclick="app.closeSettingsDetail()">
+                <ion-icon name="chevron-back"></ion-icon>
+                <span>Back</span>
+            </button>
+            <h2 id="settingsDetailTitle">General</h2>
+        </div>
+        <div class="settings-detail-content" id="settingsDetailContent">
+            <!-- Detail content loads here -->
+        </div>
+    </div>
+</div>
