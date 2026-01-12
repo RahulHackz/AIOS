@@ -110,8 +110,8 @@ The frontend connects to our **live cloud API** at `aios.hozting.in`. When you r
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ai-os.git
-   cd ai-os
+   git clone https://github.com/RahulHackz/AIOS
+   cd AIOS
    ```
 
 2. **Run locally** (recommended)
